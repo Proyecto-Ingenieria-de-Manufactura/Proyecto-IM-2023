@@ -14,6 +14,22 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!--Estilo de las tablas-->
+        table {
+              font-family: Arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+
+            th {
+              background-color: #dddddd;
+            }
     </head>
     <body>
         <!-- Navigation-->
@@ -71,7 +87,67 @@
                          </style>
                            <p><span class="c0">Para recrear el comportamiento de sección de alimentación de los hornos de la planta, se empleó el software de Tecnomatix Plant simulation, el cual permite la modelación, simulación, visualización, análisis y optimización de procesos industriales en donde exista un flujo de material u operaciones logísticas.</span></p>
                            <p><span class="c0">Inicialmente, se definieron los tiempos de cada uno de los subprocesos:</span></p>
-                    
+                            
+                        <table>
+                          <tr>
+                              <th><p>Proceso </p></th>
+                              <th> Elemento empleado </th>
+                              <th><p>Tiempo real del proceso [segundos] </p></th>
+                              <th><p>Tiempo a escala simulado [segundos] </p></th>
+                          </tr>
+                          <tr>
+                            <th><p>Dosificación </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image1.png" alt="Elemento proceso">/td>
+                            <th><p>2,5 </p></th>
+                            <th><p>0,05 </p></th>
+                          </tr>
+                           <tr>
+                            <th><p>Transporte banda 1 </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image2.png" alt="Elemento proceso">/td>
+                            <th><p>12,5 </p></th>
+                            <th><p>0,3 </p></th>
+                          </tr>
+                            <tr>
+                            <th><p>Transporte banda 2 </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image3.png" alt="Elemento proceso">/td>
+                            <th><p>2,5 </p></th>
+                            <th><p>0,05 </p></th>
+                          </tr>
+                            <tr>
+                            <th><p>Transporte banda 3 </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image4.png" alt="Elemento proceso">/td>
+                            <th><p>19,4 </p></th>
+                            <th><p>0,4 </p></th>
+                          </tr>
+                            <tr>
+                            <th><p>Tolva de almacenamiento </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image5.png" alt="Elemento proceso">/td>
+                            <th><p>300 </p></th>
+                            <th><p>6 </p></th>
+                          </tr>
+                            <tr>
+                            <th><p>Llenado </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image6.png" alt="Elemento proceso">/td>
+                            <th><p>300 </p></th>
+                            <th><p>6 </p></th>
+                          </tr>
+                            <tr>
+                            <th><p>Horneado </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image7.png" alt="Elemento proceso">/td>
+                            <th><p>172800 </p></th>
+                            <th><p>300 </p></th>
+                          </tr>
+                            <tr>
+                            <th><p>Extracción de los hornos </p></th>
+                            <td><img  height="100" src="assets/imagenes tabla 1 simulacion/image8.png" alt="Elemento proceso">/td>
+                            <th><p>150 </p></th>
+                            <th><p>3,2 </p></th>
+                          </tr>
+                            
+                        </table>
+                        
+                        
+                        
                            <div class="video-container">
                              <video width="960" height="528" autoplay controls>
                              <source src="assets/simulacion.mp4" type="video/mp4">
